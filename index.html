@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <title>JP Car Detail | Estética Automotiva em Sorocaba</title>
+  <meta name="description" content="Cuidado em cada detalhe. Conheça a JP Car Detail em Sorocaba: lavagem detalhada, polimento, higienização, vitrificação, PPF e insulfilm.">
+  <meta property="og:title" content="JP Car Detail — O cuidado muda tudo.">
+  <meta property="og:description" content="Estética automotiva em Sorocaba. Um novo olhar para o seu carro.">
+  <meta property="og:image" content="assets/car-clean.webp">
+  <link rel="icon" href="assets/jp-logo.png">
+  <link rel="preload" as="image" href="assets/car-dirty.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/car-clean.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#servicos">Pular para os serviços</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="JP Car Detail — início"><img src="assets/jp-logo.png" width="58" height="58" alt="Logo JP Car Detail Premium Studio"><span>JP CAR DETAIL<small>PREMIUM STUDIO</small></span></a>
+    <nav aria-label="Menu principal"><a href="#transformacao">A transformação</a><a href="#servicos">Serviços</a><a href="#studio">O studio</a></nav>
+    <a class="header-contact" href="https://wa.me/5515998438390?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20na%20JP%20Car%20Detail." target="_blank" rel="noopener noreferrer">Vamos cuidar do seu carro <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <div id="mobile-nav" class="mobile-nav" hidden><a href="#transformacao">A transformação</a><a href="#servicos">Serviços</a><a href="#studio">O studio</a><a href="#contato">Fale com a JP</a></div>
+  <main>
+    <section class="scroll-story" id="inicio" aria-label="Transformação interativa de um carro sujo para limpo">
+      <div class="hero" id="transformacao">
+        <div class="hero-top">
+          <div class="eyebrow"><span class="dot"></span> ESTÉTICA AUTOMOTIVA · SOROCABA</div>
+          <h1>O cuidado<br><span>muda tudo.</span></h1>
+          <div class="hero-description"><p>Mais do que limpar.<br>Revelar o melhor do seu carro.</p><a href="#servicos">Conheça nossos serviços <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="car-stage" role="img" aria-label="O mesmo carro antes e depois de uma limpeza, com transformação controlada pela rolagem">
+          <img class="car-photo dirty" src="assets/car-dirty.webp" width="1536" height="1024" alt="" fetchpriority="high">
+          <img class="car-photo clean" src="assets/car-clean.webp" width="1536" height="1024" alt="">
+        </div>
+        <div class="detail-hud" aria-label="Cuidados com cada parte do veículo" inert>
+          <div class="hud-heading"><p>JP / DETAIL SCAN</p><h2>Cuidado em<br>cada superfície.</h2><span>Clique nos pontos para explorar.</span></div>
+          <svg class="detail-lines" aria-hidden="true"><g></g></svg>
+          <div class="detail-pins"></div>
+          <div class="detail-tabs" aria-label="Selecionar parte do carro"></div>
+          <article class="detail-panel" aria-label="Descrição do cuidado selecionado"><span id="detail-category"></span><h3 id="detail-title"></h3><p id="detail-description"></p><small>Consulte o tratamento indicado para seu veículo.</small></article>
+        </div>
+        <div class="hero-caption"><span id="state-label">01 / O ponto de partida</span><span>Visualização ilustrativa</span></div>
+        <div class="hero-bottom">
+          <a class="scroll-cue" href="#servicos"><span class="mouse" aria-hidden="true"><i></i></span><span>ROLE PARA<br>VER A TRANSFORMAÇÃO</span></a>
+          <a class="hero-cta" href="#contato">Seu carro merece esse cuidado <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="services section" id="servicos">
+      <div class="section-heading"><div><p class="eyebrow">01 — NOSSOS SERVIÇOS</p><h2>O detalhe faz<br><em>a diferença.</em></h2></div><p>Da limpeza à proteção da pintura.<br>Encontre o cuidado para o seu veículo.</p></div>
+      <div class="service-layout">
+        <div class="service-photo"><img src="assets/car-clean.webp" width="1536" height="1024" alt="Detalhes da pintura brilhante de um carro — imagem ilustrativa" loading="lazy"><div><span>JP CAR DETAIL</span><p>Cuidado que se vê.<br>Em cada detalhe.</p></div><small>Imagem ilustrativa</small></div>
+        <div class="service-list">
+          <details open><summary><span class="service-number">01</span><h3>Lavagem detalhada</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Atenção à carroceria, às rodas e aos pequenos detalhes. Um cuidado completo para carros e motos.</p><a class="service-quote" data-service="Lavagem detalhada" href="#contato">Quero esse cuidado <span aria-hidden="true">↗</span></a></div></details>
+          <details><summary><span class="service-number">02</span><h3>Polimento técnico</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Tratamento da pintura para recuperar o brilho e refinar o acabamento, conforme a avaliação do veículo.</p><a class="service-quote" data-service="Polimento técnico" href="#contato">Consultar polimento <span aria-hidden="true">↗</span></a></div></details>
+          <details><summary><span class="service-number">03</span><h3>Vitrificação cerâmica</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Proteção para a pintura e um acabamento de brilho intenso. Consulte a aplicação indicada para o seu carro.</p><a class="service-quote" data-service="Vitrificação cerâmica" href="#contato">Consultar vitrificação <span aria-hidden="true">↗</span></a></div></details>
+          <details><summary><span class="service-number">04</span><h3>Higienização interna</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Cuidado com os materiais e superfícies do interior, para renovar a sensação de estar no seu carro.</p><a class="service-quote" data-service="Higienização interna" href="#contato">Consultar higienização <span aria-hidden="true">↗</span></a></div></details>
+          <details><summary><span class="service-number">05</span><h3>Proteção PPF</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Película de proteção para a pintura. Converse com a equipe sobre as áreas de aplicação e o projeto ideal.</p><a class="service-quote" data-service="Proteção PPF" href="#contato">Consultar PPF <span aria-hidden="true">↗</span></a></div></details>
+          <details><summary><span class="service-number">06</span><h3>Insulfilm</h3><span class="expand" aria-hidden="true">+</span></summary><div class="service-content"><p>Películas para os vidros do veículo. Consulte as opções de acabamento e aplicação disponíveis no studio.</p><a class="service-quote" data-service="Insulfilm" href="#contato">Consultar películas <span aria-hidden="true">↗</span></a></div></details>
+        </div>
+      </div>
+    </section>
+    <section class="studio section" id="studio">
+      <div class="studio-heading"><p class="eyebrow">02 — O STUDIO</p><h2>Para quem gosta<br>de olhar de novo<br><em>antes de ir embora.</em></h2><p>Seu carro faz parte da sua rotina. Na JP Car Detail, cada cuidado é uma oportunidade de renovar essa relação.</p><a class="text-link" href="https://www.instagram.com/jp_esttetic/" target="_blank" rel="noopener noreferrer">Veja o trabalho da JP no Instagram <span aria-hidden="true">↗</span></a></div>
+      <div class="studio-mark"><img src="assets/jp-letter-logo.svg" alt="JP Car Detail Premium Studio em relevo metálico" width="180" height="180" loading="lazy"><span>SOROCABA · SÃO PAULO</span></div>
+    </section>
+    <section class="contact section" id="contato">
+      <div class="contact-heading"><p class="eyebrow">03 — PRÓXIMO PASSO</p><h2>Vamos devolver<br><em>o brilho?</em></h2><p>Conte para a gente qual é o seu carro e o cuidado que você procura. A conversa começa no WhatsApp.</p></div>
+      <form id="quote-form" class="quote-form">
+        <label for="vehicle">Seu veículo</label><input id="vehicle" name="vehicle" autocomplete="off" maxlength="100" placeholder="Ex.: Onix, Civic, Corolla...">
+        <label for="service">Que cuidado você procura?</label><select id="service" name="service"><option>Quero uma orientação</option><option>Lavagem detalhada</option><option>Polimento técnico</option><option>Vitrificação cerâmica</option><option>Higienização interna</option><option>Proteção PPF</option><option>Insulfilm</option></select>
+        <button class="button" type="submit">Pedir orçamento pelo WhatsApp <span aria-hidden="true">↗</span></button><small>O botão abre o WhatsApp com sua mensagem pronta.</small>
+      </form>
+    </section>
+    <section class="location section" aria-label="Localização e contato"><div><p class="eyebrow">ENCONTRE A JP</p><h3>Sorocaba, SP</h3><p>Rua Tadao Yoshida, 250<br>Jardim Ibiti do Paço</p><a class="text-link" href="https://share.google/1MDVTX2rImzEjV8q9" target="_blank" rel="noopener noreferrer">Como chegar pelo Google Maps <span aria-hidden="true">↗</span></a></div><div><p class="eyebrow">CONVERSE COM A GENTE</p><a class="contact-number" href="https://wa.me/5515998438390" target="_blank" rel="noopener noreferrer">(15) 99843-8390 <span aria-hidden="true">↗</span></a><p>Consulte horários e disponibilidade<br>diretamente com a equipe.</p><a class="text-link" href="https://www.instagram.com/jp_esttetic/" target="_blank" rel="noopener noreferrer">@jp_esttetic <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><a class="footer-brand" href="#inicio">JP CAR DETAIL<span>PREMIUM STUDIO</span></a><p>O cuidado muda tudo.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+  <a class="whatsapp-float" href="https://wa.me/5515998438390?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20na%20JP%20Car%20Detail." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a JP Car Detail pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 21l1.6-4.8A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.3 7.4c-.4 0-.9.5-.9 1.4 0 2.4 3.4 5.9 6.1 6 .9 0 1.4-.5 1.5-.9l.3-1-2.1-1-.8.8c-1.1-.5-2-1.4-2.5-2.5l.7-.8-.9-2Z"/></svg></a>
+  <noscript><style>.scroll-story{height:100svh}.clean{opacity:1!important}</style></noscript>
+</body>
+</html>
